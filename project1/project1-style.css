@@ -1,0 +1,258 @@
+  @import url("https://use.typekit.net/fio1cdf.css");
+  @import url("https://use.typekit.net/fio1cdf.css");
+
+/* Page 1  PARASITE title page */
+h1 {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180px;
+  /* text-align: center;
+  margin-top: 20%; */
+  margin-bottom: 0%;
+}
+p.review {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: right;
+  margin-top: -30px;
+  width: 744px;
+}
+div#div {
+  margin-left: 20%;
+  margin-top: 18%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+  color: #FFFFFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+img{
+    display: none
+}
+h1.title:hover img{
+   display: block;
+   width: 12%;
+   left: 55%;
+   top: 20%;
+   position: fixed;
+   z-index: 1;
+}
+h1.title:hover img#poster2{
+   display: block;
+   width: 12%;
+   left: 35%;
+   top: 45%;
+   position: fixed;
+   z-index: 1;
+}
+
+
+/* Page 2 Synposis */
+p.back {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+p.synopsis {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5em;
+  width: 670px;
+  line-height: 1.5em;
+  margin-left: 33%;
+  margin-top: 20%;
+}
+span.number{
+  font-size: 0.8em;
+}
+span.familiestext:hover{
+  color: #FFFFFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+span.familiestext:hover img#families {
+  display: block;
+  width: 25%;
+  left: 50%;
+  top: 17%;
+  position: fixed;
+  z-index: 1;
+}
+
+/* Page 2 key words */
+div.step1 {
+  margin-left: 100px;
+  margin-top: 400px;
+}
+p.kim1, p.kim2, p.kim3, p.kim4 {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  width: 130px;
+  margin-bottom: 0px;
+  text-align: left;
+  /* text-align: justify;
+  text-justify: auto; */
+}
+p.kim1{
+  float: left;
+}
+p.kim2{
+  float:left;
+  margin-left: 17px;
+}
+p.kim3{
+  display:inline-block;
+  margin-left: 20px;
+}
+p.kim4{
+  display:inline-block;
+  margin-left: 20px;
+}
+p.kim5{
+  font-size: 112px;
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0px;
+  margin-left:-11px;
+}
+  p.kim5:hover img#kimfamily{
+     display: block;
+     width: 40%;
+     left: 40%;
+     top: 42%;
+     position: fixed;
+     z-index: 1;
+  }
+
+div.step2{
+  margin-left: -100px;
+  margin-top: 200px;
+}
+p.rock1 {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 73px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  z-index: 1;
+  float:left;
+  margin: 80px 0px 0px 313px;
+  /* color: gray; */
+}
+p.rock2 {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 400px;
+  margin: 0px 0px 0px 400px;
+}
+  p.rock2:hover img#rock{
+     display: block;
+     width: 55%;
+     left: 40%;
+     top: 20%;
+     position: fixed;
+     z-index: 1;
+  }
+
+p.park1 {
+  font-size: 24px;
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 28%;
+  text-align: right;
+  display: none;
+}
+#parkfamily {
+  display: block;
+  margin-top: 400px;
+  margin-left: 50%;
+}
+#parkfamily:hover +.park1{
+  display: block;
+  margin-left: 20%;
+  margin-top: -500px;
+  position:absolute;
+  z-index: 1;
+}
+
+#underwear {
+  display:block;
+  width: 60%;
+  margin-left:20%;
+  margin-top: 30%;
+}
+.underwear {
+  display: none;
+}
+#underwear:hover + .underwear{
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18vw;
+  display: block;
+  position: absolute;
+  margin-top: -41%;
+  margin-left:6%;
+}
+
+.peaches{
+  margin-left: 8%;
+  margin-top: 30%;
+}
+  .peach2 {
+    margin-left:7%
+  }
+  .peach3 {
+    margin-left:30%;
+    margin-top: -8%;
+  }
+  .peach4 {
+    margin-left:65%;
+    margin-top: 0%;
+  }
+  .peach5 {
+    margin-left:80%;
+    margin-top: -10%;
+  }
+
+a.peach:hover{
+  color: #FFFFFF;
+  text-shadow: -1px 0 #FF7699, 0 1px #FF7699, 1px 0 #FF7699, 0 -1px #FF7699;
+}
+.peach1, .peach2, .peach3, .peach4, .peach5 {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.gradientsecret {
+  margin-top: 30%;
+  margin-bottom: 0px;
+  background: linear-gradient(#ffffff, #000000);
+  padding: 20px;
+  height: 25%;
+}
+.secret {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20vw;
+  margin-left: 15%;
+}
