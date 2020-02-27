@@ -1,12 +1,12 @@
   @import url("https://use.typekit.net/fio1cdf.css");
   @import url("https://use.typekit.net/fio1cdf.css");
 
-/* Page 1  PARASITE title page */
+/* Title Page PARASITE title page */
 h1 {
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 180px;
+  font-size: 14vw;
   /* text-align: center;
   margin-top: 20%; */
   margin-bottom: 0%;
@@ -15,13 +15,16 @@ p.review {
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1.2vw;
+  margin-top: -3%;
   text-align: right;
-  margin-top: -30px;
-  width: 744px;
+  margin-right: 27%;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
-div#div {
+#div {
   margin-left: 20%;
-  margin-top: 18%;
+  margin-top: 20%;
 }
 
 a {
@@ -39,70 +42,69 @@ img{
 h1.title:hover img{
    display: block;
    width: 12%;
-   left: 55%;
-   top: 20%;
-   position: fixed;
+   left: 60vw;
+   top: 10vh;
+   position: absolute;
    z-index: 1;
 }
 h1.title:hover img#poster2{
    display: block;
    width: 12%;
    left: 35%;
-   top: 45%;
-   position: fixed;
+   top: 40vh;
+   position: absolute;
    z-index: 1;
 }
 
 
-/* Page 2 Synposis */
+/* Page 1 Synposis */
 p.back {
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 0px;
+}
+p.more{
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  margin-top: -33px;
+  text-align: right;
 }
 p.synopsis {
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5em;
-  width: 670px;
+  font-size: 1em;
+  width: 500px;
   line-height: 1.5em;
-  margin-left: 33%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20%;
 }
 span.number{
   font-size: 0.8em;
 }
-span.familiestext:hover{
-  color: #FFFFFF;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-span.familiestext:hover img#families {
-  display: block;
-  width: 25%;
-  left: 50%;
-  top: 17%;
-  position: fixed;
-  z-index: 1;
-}
 
-/* Page 2 key words */
+
+/* Page 1 key words */
+body.page1 {
+  background: linear-gradient(#ffffff, #000000);
+}
 div.step1 {
   margin-left: 100px;
-  margin-top: 400px;
+  margin-top: 900px;
 }
 p.kim1, p.kim2, p.kim3, p.kim4 {
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px;
   width: 130px;
   margin-bottom: 0px;
   text-align: left;
-  /* text-align: justify;
-  text-justify: auto; */
 }
 p.kim1{
   float: left;
@@ -120,57 +122,45 @@ p.kim4{
   margin-left: 20px;
 }
 p.kim5{
-  font-size: 112px;
+  font-size: 110px;
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 400;
   font-style: normal;
   margin-top: 0px;
   margin-left:-11px;
 }
-  p.kim5:hover img#kimfamily{
-     display: block;
-     width: 40%;
-     left: 40%;
-     top: 42%;
-     position: fixed;
-     z-index: 1;
-  }
 
 div.step2{
   margin-left: -100px;
-  margin-top: 200px;
+  margin-top: 800px;
 }
 p.rock1 {
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 73px;
+  font-size: 55px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(-180deg);
   z-index: 1;
   float:left;
-  margin: 80px 0px 0px 313px;
-  /* color: gray; */
+  margin: 60px 0px 0px 333px;
 }
 p.rock2 {
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 400px;
+  font-size: 300px;
   margin: 0px 0px 0px 400px;
 }
-  p.rock2:hover img#rock{
-     display: block;
-     width: 55%;
-     left: 40%;
-     top: 20%;
-     position: fixed;
-     z-index: 1;
-  }
 
+div.parkdiv {
+  margin-top: 800px;
+  margin-left: 5%;
+  width:70%;
+}
 p.park1 {
-  font-size: 24px;
+  font-size: 1em;
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
@@ -180,17 +170,19 @@ p.park1 {
 }
 #parkfamily {
   display: block;
-  margin-top: 400px;
   margin-left: 50%;
+  width: 60%;
 }
 #parkfamily:hover +.park1{
   display: block;
   margin-left: 20%;
-  margin-top: -500px;
-  position:absolute;
+  margin-top: -425px;
   z-index: 1;
 }
 
+div.underweardiv {
+  margin-top: 1500px;
+}
 #underwear {
   display:block;
   width: 60%;
@@ -213,7 +205,7 @@ p.park1 {
 
 .peaches{
   margin-left: 8%;
-  margin-top: 30%;
+  margin-top: 70%;
 }
   .peach2 {
     margin-left:7%
@@ -231,28 +223,258 @@ p.park1 {
     margin-top: -10%;
   }
 
-a.peach:hover{
+/* a.peach:hover{
   color: #FFFFFF;
   text-shadow: -1px 0 #FF7699, 0 1px #FF7699, 1px 0 #FF7699, 0 -1px #FF7699;
-}
+} */
 .peach1, .peach2, .peach3, .peach4, .peach5 {
   font-family: mrs-eaves-xl-serif, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 22px;
+  font-size: 14px;
+  color:white;
 }
 
-.gradientsecret {
+/* .gradientsecret {
   margin-top: 30%;
   margin-bottom: 0px;
   background: linear-gradient(#ffffff, #000000);
   padding: 20px;
   height: 25%;
-}
-.secret {
+} */
+p.secret {
   font-family: miller-headline, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 20vw;
+  color:#2A2A2A;
   margin-left: 15%;
+  margin-top: 2000px;
 }
+p.backtop{
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  color: #3A3A3A;
+  margin-top: 80px;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.backtoplink{
+    color: #3A3A3A;
+}
+
+/* More */
+textarea {
+  padding: 5px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  border: 1px solid black;
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+button {
+  margin: 20px auto 0px auto;
+  display: block;
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 3px;
+}
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+/* page 3 */
+p.thankreview {
+  font-family: miller-headline, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  width: 220px;
+  margin: 150px auto 0% auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+
+/* page 2 submit a response */
+textarea {
+font-size: 14px;
+width: 240px;
+}
+button {
+font-size: 14px;
+background-color: white;
+padding: 3px;
+}
+a.submit {
+text-decoration: none;
+}
+
+
+/* page 3 */
+div.thankyoumessage {
+width: 95%;
+height: 50%;
+/* background-color: black; */
+z-index: 10;
+position: fixed;
+display: block;
+text-align: center;
+}
+p.reviewbox1, p.reviewbox2, p.reviewbox3, p.reviewbox4, p.reviewbox5, p.reviewbox6, p.reviewbox7, p.reviewbox8 {
+border: 1px solid black;
+padding: 10px;
+width: 200px;
+font-family: miller-headline, serif;
+font-weight: 300;
+font-style: normal;
+font-size: 12px;
+}
+  p.reviewbox1{
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  p.reviewbox2, p.reviewbox3, p.reviewbox4,p.reviewbox5,p.reviewbox6, p.reviewbox7, p.reviewbox8 {
+    float:left;
+    display:flex;
+    margin-left: 10px;
+  }
+
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+    a.submit:link{
+      text-decoration: none;
+    }
+    a.enterlink:link{
+      text-decoration: none;
+    }
+    a:link {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+    p.synopsis{
+      font-size: 0.9em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 290px;
+    }
+
+    /* page4 */
+    p.review1,p.review2,p.review3,p.review4 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+    }
+
+    /* page1 */
+    div.step1{
+      margin-left: 5px;
+    }
+      p.kim1, p.kim2 {
+        font-size: 10px;
+        width:82px;
+        margin-left: 5px;
+      }
+      p.kim3{
+        font-size: 10px;
+        width:82px;
+        margin-left: 7px;
+      }
+      p.kim4 {
+        font-size: 10px;
+        width:82px;
+        margin-left: 0px;
+      }
+      p.kim5{
+        font-size: 65px;
+        margin-left: 1px;
+      }
+
+    div.step2{
+      margin-left: -300px;
+    }
+      p.rock1{
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      p.rock2{
+        font-size: 100px;
+        margin-left: -20px;
+      }
+
+    p.park1 {
+      display: block;
+      font-size: 14px;
+      width: 250px;
+      text-align: left;
+      margin-left: 20px;
+    }
+    #parkfamily {
+      margin-left: 20px;
+      width: 250px;
+    }
+
+    div.underweardiv {
+      margin-top: 900px;
+    }
+    p.underwear {
+      display: block;
+      font-size: 80px;
+      margin-left: 15px;
+      margin-top: -7px;
+    }
+
+    .peaches{
+      margin-left: 30px;
+      margin-top: 900px;
+    }
+      .peach2 {
+        margin-left:30px;
+      }
+      .peach3 {
+        margin-left:110px;
+        margin-top: -70px;
+      }
+      .peach4 {
+        margin-left:220px;
+        margin-top: 0px;
+      }
+      .peach5 {
+        margin-left:280px;
+        margin-top: -40px;
+      }
+
+    div.secretdiv {
+      margin-bottom: 100px;
+      margin-left: 9px;
+    }
+    p.secret {
+      margin-top: 800px;
+      margin-bottom: 200px;
+    }
+    p.backtop {
+      margin-bottom: 200px;
+    }
+
+  @media screen and (max-width: 650px) {
+    p.synopsis{
+      width: 320px;
+      font-size: 14px;
+    }
+  }

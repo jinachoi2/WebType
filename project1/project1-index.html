@@ -6,10 +6,24 @@
        	<meta name="viewport" content="width=device-width, initial-scale=1">
        	<link rel="stylesheet" type="text/css" href="project1-style.css">
         <title>Project 1</title>
+        <style>
+          @media screen and (max-width: 450px) {
+            h1.title:hover img#poster2{
+               top: 20vh;
+            }
+            p.review {
+              margin-right: 26%;
+            }
+            a:link {
+              color: #FFFFFF;
+              text-decoration: none;
+            }
+          }
+        </style>
     </head>
     <body>
     <div id="div">
-      <a href="project1-page1.html"><h1 class="title">PARASITE
+      <a href="project1-page1.html" id="titlelink"><h1 class="title">PARASITE
       <img alt="Parasite Poster" src="parasiteposter.jpg"><img id="poster2" alt="Parasite Poster2" src="parasiteposter2.jpg"></h1></a>
       <p class="review">a quick review</p>
     </div>
