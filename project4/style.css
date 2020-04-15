@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Ortica;
+  src: url(Ortica-Bold.woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Ortica;
+  src: url(Ortica-Light.woff);
+  font-weight: lighter;
+}
+
+html {
+  background-color: #E1BEE7;
+}
+h1{
+  font-family: Ortica;
+  font-weight: bold;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 10px;
+  margin: 30px auto 80px auto;
+  width: 40%;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 7px 10px;
+}
+p {
+  font-family: Ortica;
+  font-weight: lighter;
+  width: 90%;
+  padding: 10px auto 10px 20px;
+  padding-left: 20px;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+div.container {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+div.column {
+  float: left;
+  width: 45%;
+  margin-left: 3%;
+  /* background-color: white; */
+}
+div.calendar {
+  background-color: purple;
+  border: 2px solid black;
+  margin: 0px auto 50px auto;
+  box-shadow: 7px 7px;
+}
+div.welcome{
+  background-color: white;
+  border: 2px solid black;
+}
+div.entries{
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 10px 10px;
+  padding: 20px 0px 20px 20px;
+}
+  div.entries:hover{
+    box-shadow: none;
+    transition-duration: 1s;
+  }
+p.entry-title{
+  font-family: Ortica;
+  font-weight: bold;
+  font-size: 2em;
+  display: inline;
+}
+p.entry-date{
+  font-family: Ortica;
+  font-weight: lighter;
+  font-size: 2em;
+  display: inline;
+  margin-left: 50px;
+}
+
+
+/* entry styles */
+div.column-left{
+  font-size: 0.8em;
+  float: left;
+  width: 15%;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 5px 4px blue;
+}
+div.column-right{
+  float: left;
+  width: 80%;
+  margin-left: 20%;
+}
+div.writing{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+  font-family: Ortica;
+  font-weight: bold;
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+img{
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* p.song-caption{
+  background-color: purple;
+  border: 2px solid black;
+  padding: 5px;
+  width: 200px;
+} */
