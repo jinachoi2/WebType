@@ -9,9 +9,9 @@
   font-weight: lighter;
 }
 
-html {
+/* html {
   background-color: #E1BEE7;
-}
+} */
 h1{
   font-family: Ortica;
   font-weight: bold;
@@ -27,6 +27,8 @@ h1{
 p {
   font-family: Ortica;
   font-weight: lighter;
+  font-size:1.1em;
+  line-height: 1.4;
   width: 90%;
   padding: 10px auto 10px 20px;
   padding-left: 20px;
@@ -107,7 +109,7 @@ div.writing{
 h2{
   font-family: Ortica;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 7em;
   margin-bottom: 50px;
 }
 img{
