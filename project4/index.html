@@ -29,11 +29,35 @@
         </div>
 
         <div class="column">
-          <p> this is where the playlist of song/journal entries should go</p>
-          <p> add in music buttons/playlist box; draw! </p>
-          <a href="entry1.html"><div class="entries">
-            <p class="entry-title">Entry 1: Busan</p>
+          <div class="playlist">
+            <audio id="player">
+              <source src="songs/Busan.mp3" type="audio/mpeg">
+              <source src="songs/Dandelion.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="player-container">
+              <button onclick="document.getElementById('player').play()">Previous</button>
+              <button onclick="document.getElementById('player').play()">Play</button>
+              <button onclick="document.getElementById('player').pause()">Pause</button>
+              <button onclick="document.getElementById('player').play()">Next</button>
+            </div>
+          </div>
+
+          <a href="entry1.html">
+            <div class="entries">
+            <p class="entry-title">Entry 1: Disturbance</p>
             <p class="entry-date">04.10.2020</p>
+            </div>
+          </a>
+          <a href="entry2.html">
+            <div class="entries">
+            <p class="entry-title">Entry 2: Rapeseed Flower Fields</p>
+            <p class="entry-date">04.11.2020</p>
+            </div>
+          </a>
+          <a href="entry3.html"><div class="entries">
+            <p class="entry-title">Entry 3: Hyp.o.crite.s</p>
+            <p class="entry-date">04.23.2020</p>
           </div></a>
         </div>
       </div>
