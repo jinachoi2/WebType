@@ -65,7 +65,8 @@ div.entries{
   border: 2px solid black;
   background-color: white;
   box-shadow: 10px 10px;
-  padding: 20px 0px 20px 20px;
+  padding: 20px 0px 10px 20px;
+  margin-bottom: 10px;
 }
   div.entries:hover{
     box-shadow: none;
@@ -74,28 +75,94 @@ div.entries{
 p.entry-title{
   font-family: Ortica;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   display: inline;
 }
 p.entry-date{
   font-family: Ortica;
   font-weight: lighter;
-  font-size: 2em;
-  display: inline;
+  font-size: 1em;
   margin-left: 50px;
+  border: 1px solid black;
+  box-shadow: 5px 5px black;
 }
+div.player-container{
+  background-color: white;
+  border: 1px solid black;
+  height: 20vh;
+  margin-bottom: 15px;
+}
+  button{
+    background-color: white;
+    border: 1px solid black;
+    font-family: Ortica;
+    font-weight: bold;
+  }
 
 
 /* entry styles */
+/* nav */
 div.column-left{
   font-size: 0.8em;
+  overflow: auto;
   float: left;
   width: 15%;
-  background-color: white;
   height: 100vh;
   position: fixed;
-  box-shadow: 5px 4px blue;
+  background-color: white;
+  box-shadow: 5px 4px black;
 }
+  div.nav{
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+  }
+    div.nav:hover{
+      box-shadow: none;
+      transition: 1s;
+    }
+    p.bold{
+      font-family: Ortica;
+      font-weight: bold;
+    }
+  img.image-nav{
+    box-shadow: none;
+    width: 90%;
+    margin-left: 5%;
+  }
+  /* p.title-nav{
+    margin-top:0px;
+  } */
+  span.album-title1{
+    visibility: hidden;
+    font-size: 1.1vw;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    position: absolute;
+    z-index: 1;
+    margin-top: 35%;
+    margin-left: -40%;
+  }
+  span.album-title2{
+    visibility: hidden;
+    font-size: 1.1vw;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    position: absolute;
+    z-index: 1;
+    margin-top: 80%;
+    margin-left: -80%;
+    width: 80%;
+  }
+  div.nav-entry1:hover span.album-title1{
+    visibility: visible;
+    }
+  div.nav-entry2:hover span.album-title2{
+    visibility: visible;
+  }
+
+/* written contents */
 div.column-right{
   float: left;
   width: 80%;
@@ -109,16 +176,94 @@ div.writing{
 h2{
   font-family: Ortica;
   font-weight: bold;
-  font-size: 7em;
-  margin-bottom: 50px;
+  font-size: 6vw;
+  margin-bottom: 0px;
+  padding: 5px 0px 5px 10px;
+  width: 70%;
+  border: 1px solid black;
+  box-shadow: 10px 10px black;
 }
-img{
-  width: 100%;
-  margin-bottom: 50px;
+  h2.h2-entry1{
+    background-color: #D3D3D3;
+  }
+  h2.h2-entry2{
+    font-size: 5vw;
+    background-color: #FFFCDD;
+  }
+p.entry-date{
+  font-size: 1vw;
+  padding-left: 10px;
+  margin-left: 0px;
+  width: 15%;
 }
-/* p.song-caption{
-  background-color: purple;
-  border: 2px solid black;
-  padding: 5px;
-  width: 200px;
-} */
+  p.e-d-entry1 {
+    background-color: #D3D3D3;
+  }
+  p.e-d-entry2 {
+    background-color: #FFFCDD;
+  }
+
+div.song-info{
+  width:70%;
+}
+  img{
+    width: 103%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px black;
+  }
+    img:hover {
+      box-shadow: none;
+      transition: 1s;
+    }
+  p.data{
+    font-size: 1em;
+    border: 1px solid black;
+    box-shadow: 7px 7px black;
+    width: 98%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+      p.d-entry1{
+       background-color: #D3D3D3;
+      }
+      p.d-entry2{
+        background-color: #FFFCDD;
+      }
+
+p.paragraph-container{
+  border: 1px solid black;
+  box-shadow: 15px 20px black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+  p.p-c-entry1{
+   background-color: #D3D3D3;
+  }
+  p.p-c-entry2{
+    background-color: #FFFCDD;
+  }
+  p.link:hover{
+    box-shadow: none;
+    transition: 1s;
+  }
+
+p.quote {
+  font-family: Ortica;
+  font-weight: bold;
+  font-size: 2.3vw;
+}
+  p.quote:hover{
+    box-shadow: none;
+    transition: 1s;
+  }
+
+iframe{
+  box-shadow: 15px 20px black;
+  margin: 20px auto 20px auto;
+}
+  iframe:hover {
+    box-shadow: none;
+    transition: 1s;
+  }
