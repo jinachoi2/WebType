@@ -78,14 +78,20 @@ p.entry-title{
   font-size: 1.5em;
   display: inline;
 }
-p.entry-date{
+p.date-homepage{
   font-family: Ortica;
   font-weight: lighter;
   font-size: 1em;
-  margin-left: 50px;
-  border: 1px solid black;
-  box-shadow: 5px 5px black;
+  margin-top: 0px
 }
+  p.entry-date{
+    font-family: Ortica;
+    font-weight: lighter;
+    font-size: 1em;
+    margin-left: 50px;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+  }
 div.player-container{
   background-color: white;
   border: 1px solid black;
