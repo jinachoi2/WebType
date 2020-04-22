@@ -87,8 +87,9 @@ p.date-homepage{
   p.entry-date{
     font-family: Ortica;
     font-weight: lighter;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: 50px;
+    margin-top: -10px;
     border: 1px solid black;
     box-shadow: 5px 5px black;
   }
