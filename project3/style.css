@@ -56,7 +56,7 @@ span.city{
   grid-row-gap: 10%;
   padding-left: 15%;
   padding-right: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
   }
 
 .letters-container {
@@ -117,4 +117,3 @@ input#vfcontrols {
     margin-top: 50px;
   }
 
-}
