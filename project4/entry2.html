@@ -5,86 +5,119 @@
         <meta charset="utf-8">
        	<meta name="viewport" content="width=device-width, initial-scale=1">
        	<link rel="stylesheet" type="text/css" href="style.css">
-        <title>Virtual Playlist</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="script.js"></script>
-      <style>
+        <title>Entry 2: Canola Fields</title>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="script.js"></script> -->
+      <!-- <style>
         html{
           background-color: #FFF9BE;
         }
-      </style>
+      </style> -->
     </head>
     <body>
 <!-- left column nav -->
       <div class="column-left">
         <div class="nav">
-          <a href="index.html"><p class="bold">Home</p></a>
+          <a href="index.html"><img class="nav-icons" src="images/home.svg" alt="home page" height="30"></a>
         </div>
         <div class="nav">
-          <a href="entry1.html"><p class="bold">Previous song</p></a>
+          <a href="entry1.html"><img class="nav-icons" src="images/prevsong.svg" alt="previous song" height="25"></a>
         </div>
         <div class="nav">
-          <a href="entry3.html"><p class="bold">Next song</p></a>
+          <a href="entry3.html"><img class="nav-icons" src="images/nextsong.svg" alt="next song" height="25"></a>
         </div>
-        <div class="nav nav-entry1">
-          <a href="entry1.html">
-          <img src="images/entry1-album.jpeg" alt="Oohyo Dandelion album cover" class="image-nav">
-            <span class="album-title1">Disturbance</span>
-          </a>
-        </div>
-        <div class="nav nav-entry2">
-          <a href="entry2.html">
-          <img src="images/entry2-album.jpg" alt="Oohyo Dandelion album cover" class="image-nav">
-            <span class="album-title2">Canola Fields</span>
-          </a>
-        </div>
-        <div class="nav nav-entry1">
-          <a href="entry3.html">
-          <img src="images/entry3-album.jpg" alt="Young B The End album cover" class="image-nav">
-            <span class="album-title1">Hyp.o.crite.s</span>
-          </a>
-        </div>
+        <div class="img-nav">
+          <div class="nav-grid img1">
+            <a href="entry1.html">
+            <img src="images/entry1-album.jpeg" alt="Damons Year Busan" class="entry-img"><span class="entryname">Entry 1<br>Disturbance</span></a>
+          </div>
+          <div class="nav-grid img2">
+            <a href="entry2.html">
+            <img src="images/entry2-album.jpg" alt="Oohyo Dandelion " class="entry-img"><span class="entryname">Entry 2<br>Canola Fields</span></a>
+          </div>
+          <div class="nav-grid img3">
+            <a href="entry3.html">
+            <img src="images/entry3-album.jpg" alt="Young B The End " class="entry-img"><span class="entryname">Entry 3<br>Hyp.o.crite.s</span></a>
+          </div>
+          <div class="nav-grid img4">
+            <a href="entry4.html">
+            <img src="images/entry4-album.jpg" alt="Joe Hisaishi Howl's Moving Castle " class="entry-img"><span class="entryname">Entry 4<br>Piano Man</span></a>
+          </div>
+          <div class="nav-grid img5">
+            <a href="entry5.html">
+            <img src="images/entry5-album.jpg" alt="Lauv Modern Loneliness " class="entry-img"><span class="entryname">Entry 5<br>Alone Together</span></a>
+          </div>
+          <div class="nav-grid img6">
+            <a href="entry6.html">
+            <img src="images/entry6-album.jpg" alt="Lim Hyung Joo Finally vol.5 " class="entry-img"><span class="entryname">Entry 6<br>Tragedy</span></a>
+          </div>
+          <div class="nav-grid img7">
+            <a href="entry7.html">
+            <img src="images/entry7-album.jpg" alt="Kenshi Yonezu Spirits of the Sea " class="entry-img"><span class="entryname">Entry 7<br>Wishes</span></a>
+          </div>
+          <div class="nav-grid img8">
+            <a href="entry8.html">
+            <img src="images/entry8-album.jpg" alt="dosii lovememore" class="entry-img"><span class="entryname">Entry 8<br>City Pop</span>
+          </div></a>
+          <div class="nav-grid img9">
+            <a href="entry9.html">
+            <img src="images/entry9-album.jpg" alt="IU Palette album cover" class="entry-img"><span class="entryname">Entry 9<br>Coincidence</span></a>
+          </div>
+          <div class="nav-grid img10">
+            <a href="entry10.html">
+            <img src="images/entry10-album.jpg" alt="BURNOUT SYNDROMES Fly High!!" class="entry-img"><span class="entryname">Entry 10<br>Volleyball 1</span></a>
+          </div>
+          <div class="nav-grid img11">
+            <a href="entry11.html">
+            <img src="images/entry11-album.jpg" alt="BTS Map of Seven" class="entry-img"><span class="entryname">Entry 11<br>Volleyball 2</span></a>
+          </div>
+          <div class="nav-grid img12">
+            <a href="entry12.html">
+            <img src="images/entry12-album.jpeg" alt="Jeremy Zucker always, i'll care" class="entry-img"><span class="entryname">Entry 12<br>Peace</span></a>
+          </div>
       </div>
+    </div>
 
 <!-- right column -->
       <div class="column-right">
         <div class="writing">
           <h2 class="h2-entry2">Canola Fields</h2>
-          <p class="entry-date e-d-entry2">04. 11. 2020 </p>
+          <p class="entry-date entry2-color">04. 12. 2020 </p>
 
 <!-- song info, album cover, metadata -->
         <div class="song-info">
-          <a href="https://vibe.naver.com/album/2014788" target="_blank"><img src="images/entry2-album.jpg" alt="Damons Year Busan album cover"></a>
+          <a href="https://vibe.naver.com/album/2014788" target="_blank"><img class="album-image" src="images/entry2-album.jpg" alt="Damons Year Busan album cover"></a>
 
-          <p class="data d-entry2">Dandelion // Oohyo // 2017 // Rock, Indie</p>
+          <p class="data entry2-color">Dandelion // Oohyo // 2017 // Rock, Indie</p>
 
-          <audio class="audio" controls autoplay="autoplay">
-            <source src="songs/Dandelion.mp3" type="audio/mpeg" loop="loop">
+          <audio class="audio" controls>
+            <source src="songs/Dandelion.mp3" type="audio/mp3" loop="loop">
           </audio>
         </div>
 
 <!-- writing + images, videos, audio -->
-          <p class="paragraph-container p-c-entry2">
-            <b>Dandelion</b> was released in spring 2017 under the album of the same name. Even before listening to the song, the timing of its release and the sunny, dainty yellow of the album art indicates a song related to spring time and good feelings. The song appropriately features Oohyo’s expressive, childlike voice as the main source of the melody and leaving the instrumentals as more percussive elements. Oohyo explains  that she wanted to express the meaning of love she has experienced:
+          <p class="paragraph-container entry2-color">
+            Dandelion was released in spring 2017 under the album of the same name. Even before listening to the song, the timing of its release and the sunny, dainty yellow of the album art indicates a song related to spring time and good feelings. The song appropriately features Oohyo’s expressive, childlike voice as the main source of the melody and leaving the instrumentals as more percussive elements. Oohyo explains  that she wanted to express the meaning of love she has experienced:
           </p>
 
-          <p class="paragraph-container p-c-entry2 quote">
+          <p class="paragraph-container entry2-color quote">
             “love is like a bloomed dandelion on a sidewalk that we carelessly pass by as we look into our phones. It is plain but always there to suddenly shine us with warmth when we come back home with our tired and tense shoulders. I believe that’s what love is like.”
           </p>
 
           <iframe width="96%" height="400vh" src="https://www.youtube.com/embed/qr9i9jRuTug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <a href="http://koreabizwire.com/samcheok-plows-up-canola-flowers-to-fend-off-visitors/157031">
-          <p class="paragraph-container p-c-entry2 link">
+          <p class="paragraph-container entry2-color link">
             Oohyo is also one of my favorite artists to listen to focus or calm down. I love the poem-like narrative she builds with words that further express the atmosphere of her music. Her song reminded me of a piece of news that aired last week: the government decided to mow off large fields of yellow rapeseed flowers in order to prevent crowds from gathering to see flowers.
           </p></a>
 
           <iframe width="96%" height="400vh" src="https://www.youtube.com/embed/f_d8FSbYddw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-          <p class="paragraph-container p-c-entry2">
+          <p class="paragraph-container entry2-color">
             It was both shocking and infuriating to see the large hunk of metal rip through the wispy stems. Visually, the contrast was shocking. It really showed that our ordinary routine and yearly plans to watch spring flowers could be disrupted just like that. It was a real shame since flower seeing is definitely an experience that one must be physically present for. The news also made me upset since they wouldn’t have had to cut the flowers if people followed procedures and practiced social distancing. I understand that with the seasonal change and long periods of quarantine, people are becoming listless and taking the pandemic less seriously. I just hope that we can practice more patience and hope that we will be able to see the summer flowers without being wary of others and wearing masks.
           </p>
         </div>
+        <div class="end"></div>
       </div>
 
 

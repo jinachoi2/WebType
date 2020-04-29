@@ -8,6 +8,18 @@
         <title>Virtual Playlist</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <!-- <script src="script.js"></script> -->
+      <script>
+        audioPlayer();
+        function audioPlayer(){
+          $("#player")[0].src = $("#playlist1 a")[0];
+          $("#player")[0].play();
+        }
+        audioPlayer();
+        function audioPlayer(){
+          $("#player")[0].src = $("#playlist2 a")[0];
+          $("#player")[0].play();
+        }
+      </script>
       <style>
         html{
           background-color: #E1BEE7;
@@ -17,48 +29,131 @@
     <body>
       <h1>Virtual Playlist</h1>
 
+<!-- left column -->
       <div class="container">
-        <div class="column">
-          <div class="calendar">
-            <p> how should i create this calendar?</p>
-          </div>
-
-          <div class="welcome">
-          <p>Welcome to the <i>Virtual Playlist</i>. This personal collection is a deep record shelf where you can explore various music and Jina’s thoughts and experiences that tie into each tune. It may be the lyrics, the melody or even the point of time the song existed in that prompted each journal entry. They may entirely consist of subjective emotions and ramblings or pull from different bits and pieces of articles or videos that sparked any interest. Each episode focuses on the relationship between sound and type as a way to express ideas into the virtual world many live in today. Ultimately, this intangible shelf is an outlet created to help ride the waves of change the covid-19 outbreak currently brings.</p>
-          </div>
-        </div>
-
-        <div class="column">
+        <div class="home-column-left">
           <div class="playlist">
-            <audio id="player">
-              <source src="songs/Busan.mp3" type="audio/mpeg">
-              <source src="songs/Dandelion.mp3" type="audio/mpeg">
+            <audio src="" controls id="player">
             </audio>
 
-            <div class="player-container">
+            <!-- <div class="player-container">
               <button onclick="document.getElementById('player').play()">Previous</button>
               <button onclick="document.getElementById('player').play()">Play</button>
               <button onclick="document.getElementById('player').pause()">Pause</button>
               <button onclick="document.getElementById('player').play()">Next</button>
-            </div>
+            </div> -->
           </div>
 
+          <div class="calendar">
+            <div class="cal-grid img1" id="playlist1">
+              <a href="songs/Busan.mp3">
+              <img src="images/entry1-album.jpeg" alt="Damons Year Busan" class="cal-img"><span class="songname">1. Busan</span></a>
+            </div>
+            <div class="cal-grid img2" id="playlist2">
+              <a href="songs/Dandelion.mp3">
+              <img src="images/entry2-album.jpg" alt="Oohyo Dandelion " class="cal-img"><span class="songname">2. Dandelion</span>
+            </div></a>
+            <div class="cal-grid img3">
+              <img src="images/entry3-album.jpg" alt="Young B The End " class="cal-img"><span class="songname">3. The End</span>
+            </div>
+            <div class="cal-grid img4">
+              <img src="images/entry4-album.jpg" alt="Joe Hisaishi Howl's Moving Castle " class="cal-img"><span class="songname">4. Merry Go Round of Life</span>
+            </div>
+            <div class="cal-grid img5">
+              <img src="images/entry5-album.jpg" alt="Lauv Modern Loneliness " class="cal-img"><span class="songname">5. Modern Loneliness</span>
+            </div>
+            <div class="cal-grid img6">
+              <img src="images/entry6-album.jpg" alt="Lim Hyung Joo Finally vol.5 " class="cal-img"><span class="songname">6. A Thousand Winds</span>
+            </div>
+            <div class="cal-grid img7">
+              <img src="images/entry7-album.jpg" alt="Kenshi Yonezu Spirits of the Sea " class="cal-img"><span class="songname">7. Spirites of the Sea</span>
+            </div>
+            <div class="cal-grid img8">
+              <img src="images/entry8-album.jpg" alt="dosii lovememore" class="cal-img"><span class="songname">8. lovememore</span>
+            </div>
+            <div class="cal-grid img9">
+              <img src="images/entry9-album.jpg" alt="IU Palette album cover" class="cal-img"><span class="songname">9. Palette</span>
+            </div>
+            <div class="cal-grid img10">
+              <img src="images/entry10-album.jpg" alt="BURNOUT SYNDROMES Fly High!!" class="cal-img"><span class="songname">10. Fly High!!</span>
+            </div>
+            <div class="cal-grid img11">
+              <img src="images/entry11-album.jpg" alt="BTS Map of Seven" class="cal-img"><span class="songname">11. Black Swan</span>
+            </div>
+            <div class="cal-grid img12">
+              <img src="images/entry12-album.jpeg" alt="Jeremy Zucker always, i'll care" class="cal-img"><span class="songname">12. always, i'll care</span>
+            </div>
+
+          </div>
+          <div class="end"></div>
+        </div>
+    </div>
+
+<!-- right column -->
+      <div class="home-column-right">
+        <div class="welcome">
+          <p class="welcome-text">Welcome to the Virtual Playlist. This personal collection is a deep record shelf where you can explore various music and Jina’s thoughts and experiences that tie into each tune. It may be the lyrics, the melody or even the point of time the song existed in that prompted each journal entry. They may entirely consist of subjective emotions and ramblings or pull from different bits and pieces of articles or videos that sparked any interest. Ultimately, this intangible shelf is an outlet created to help ride the waves of change the covid-19 outbreak currently brings.</p>
+        </div>
+
+      <div class="home-entry">
           <a href="entry1.html">
             <div class="entries">
             <p class="entry-title">Entry 1: Disturbance</p>
-            <p class="date-homepage">04.10.2020</p>
+            <p class="date-homepage">04.11.2020</p>
             </div>
           </a>
           <a href="entry2.html">
             <div class="entries">
             <p class="entry-title">Entry 2: Canola Fields</p>
-            <p class="date-homepage">04.11.2020</p>
+            <p class="date-homepage">04.12.2020</p>
             </div>
           </a>
           <a href="entry3.html"><div class="entries">
             <p class="entry-title">Entry 3: Hyp.o.crite.s</p>
-            <p class="date-homepage">04.23.2020</p>
+            <p class="date-homepage">04.13.2020</p>
           </div></a>
+          <a href="entry4.html"><div class="entries">
+            <p class="entry-title">Entry 4: Piano Man</p>
+            <p class="date-homepage">04.14.2020</p>
+          </div></a>
+          <a href="entry5.html"><div class="entries">
+            <p class="entry-title">Entry 5: Alone Together</p>
+            <p class="date-homepage">04.15.2020</p>
+          </div></a>
+
+          <a href="entry6.html"><div class="entries">
+            <p class="entry-title">Entry 6: Tragedy</p>
+            <p class="date-homepage">04.16.2020</p>
+          </div></a>
+          <a href="entry7.html"><div class="entries">
+            <p class="entry-title">Entry 7: Wishes</p>
+            <p class="date-homepage">04.17.2020</p>
+          </div></a>
+          <a href="entry8.html"><div class="entries">
+            <p class="entry-title">Entry 8: City Pop</p>
+            <p class="date-homepage">04.18.2020</p>
+          </div></a>
+          <a href="entry9.html"><div class="entries">
+            <p class="entry-title">Entry 9: Coincidence</p>
+            <p class="date-homepage">04.19.2020</p>
+          </div></a>
+          <a href="entry10.html"><div class="entries">
+            <p class="entry-title">Entry 10: Volleyball 1</p>
+            <p class="date-homepage">04.20.2020</p>
+          </div></a>
+          <a href="entry11.html"><div class="entries">
+            <p class="entry-title">Entry 11: Volleyball 2</p>
+            <p class="date-homepage">04.21.2020</p>
+          </div></a>
+          <a href="entry12.html"><div class="entries">
+            <p class="entry-title">Entry 12: Peace</p>
+            <p class="date-homepage">04.22.2020</p>
+          </div></a>
+          <!-- <a href="entry13.html"><div class="entries">
+            <p class="entry-title">Entry 13: Coincidence</p>
+            <p class="date-homepage">04.23.2020</p>
+          </div></a> -->
+          <div class="end"></div>
         </div>
       </div>
 
