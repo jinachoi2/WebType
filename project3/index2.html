@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta charset="utf-8">
+       	<meta name="viewport" content="width=device-width, initial-scale=1">
+       	<link rel="stylesheet" type="text/css" href="style.css">
+        <title>Variable Font</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <style>
+          p.variable {
+            font-family: 'Oswald', sans-serif;
+          }
+        </style>
+    </head>
+
+    <body>
+      <!-- <div id="time"></div> -->
+      <a href="index.html"><p class="back"> ... </p></a>
+      <div class="grid-container">
+        <div class="grid-item">
+          <p class="variable" id="tnewyork"><span class="city">New York</span>
+            <br>USA &ensp;| &ensp;<span id="usatime"></span>
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable"><span class="city">Seoul</span>
+            <!-- <br>South Korea &ensp;| &ensp;<span id="koreatime"></span> -->
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable"><span class="city">Paris</span>
+            <!-- <br>France&ensp;| &ensp;<span id="francetime"></span> -->
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable"><span class="city">Olso</span>
+            <!-- <br>Norway&ensp;| &ensp;<span id="norwaytime"></span> -->
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable"><span class="city">Kuala Lumpur</span>
+            <!-- <br>Malaysia&ensp;| &ensp;<span id="malaysiatime"></span> -->
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable"><span class="city">Vancouver</span>
+            <!-- <br>Canada&ensp;| &ensp;<span id="canadatime"></span> -->
+          </p>
+        </div>
+      </div>
+
+      <div class="letters-container">
+        <p class="letters">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p class="letters">abcdefghijklmnopqrstuvwxyz</p>
+      </div>
+
+      <div class="controls">
+        <input id="vfcontrols" type="range" min="50" max="200" value="120">
+        <p class="variable">Value: <span id="value"></span></p>
+      </div>
+    </body>
+  </html>

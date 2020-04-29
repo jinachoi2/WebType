@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "variableTest";
+  src: url("variableType.ttf") format("truetype-variations");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* title page */
+.title-container {
+  margin: 30% auto 0% 5%;
+}
+p.variabletitle {
+  font-family: 'variableTest';
+  font-size: 3em;
+  /* text-align: center; */
+}
+p#time {
+  font-size:0.8em;
+  margin-top: -40px;
+  margin-left: 20px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
+
+/* World time page */
+p.back{
+  font-family: 'variableTest';
+  font-size: 2em;
+  margin: -15px -2px 0px;
+}
+p.variable {
+  /* font-family: pt-sans-narrow, sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1vw;
+}
+span.city{
+  font-family: 'variableTest';
+  /* font-variation-settings: 'slnt' 120; */
+  font-size: 5.1vw;
+  /* margin-left: -6%; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+  padding-left: 15%;
+  padding-right: 10%;
+  margin-top: 5%;
+  }
+
+.letters-container {
+  margin: 32% auto 0 auto;
+}
+p.letters{
+  font-family: 'variableTest';
+  font-variation-settings: 'slnt' var(--text-axis);
+  word-break: break-all;
+  font-weight:200;
+  font-size: 4.6vw;
+  text-align: center;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+
+div.controls{
+  margin: 0 auto 30% auto;
+  text-align: center;
+}
+input#vfcontrols {
+  width: 30%;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  p.variabletitle {
+    font-size: 2.8em;
+    margin-top: 40%;
+  }
+  .title-container {
+    margin-left: 8%;
+  }
+/*  */
+  .grid-container{
+    grid-template-columns: 1fr;
+    grid-row-gap:2%;
+  }
+  p.variable{
+    font-size:3vw;
+  }
+  span.city{
+    font-size: 10vw;
+    margin-left: 0%;
+  }
+/*  */
+  p.letters{
+    font-weight:200;
+    font-size: 10vw;
+    text-align: center;
+    word-break: break-all;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  p.letters-container {
+    margin-top: 50px;
+  }
+
+}
