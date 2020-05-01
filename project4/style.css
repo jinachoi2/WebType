@@ -86,6 +86,7 @@ div.calendar {
     font-family: Ortica;
     font-weight: bold;
     font-size: 1.1vw;
+    padding: 2px;
     background-color: white;
     border: 1px solid black;
     box-shadow: 2px 2px black;
@@ -192,6 +193,8 @@ div.home-entry{
 
 
 
+
+
 /* entry styles */
 /* nav */
 div.column-left{
@@ -239,6 +242,7 @@ div.column-left{
       font-family: Ortica;
       font-weight: bold;
       font-size: 1vw;
+      padding: 2px;
       background-color: white;
       border: 1px solid black;
       box-shadow: 2px 2px black;
@@ -296,9 +300,6 @@ div.column-left{
     margin: 5px auto auto auto;
     display:block;
   }
-  /* p.title-nav{
-    margin-top:0px;
-  } */
   span.album-title1{
     visibility: hidden;
     font-size: 1.1vw;
@@ -339,7 +340,7 @@ div.end{
   margin-bottom: 10vh;
 }
 div.writing{
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -389,7 +390,7 @@ div.song-info{
     font-size: 1.3vw;
     border: 1px solid black;
     /* box-shadow: 10px 10px black; */
-    width: 98%;
+    width: 100%;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -406,23 +407,25 @@ p.link:hover{
   transition: 1s;
 }
 
-p.quote {
+.quote {
   font-family: Ortica;
   font-weight: bold;
   font-size: 2.5vw;
 }
-  p.quote2 {
+  .quote2 {
     font-family: Ortica;
     font-weight: bold;
     font-size: 1.9vw;
   }
-.korean {
-  font-family: 'Song Myung', serif;
+  .korean {
+    font-family: 'Song Myung', serif;
+  }
+
+img.myimg {
+  width: 95.5%;
 }
 
-
 iframe{
-  box-shadow: 10px 10px black;
   margin: 20px auto 20px auto;
 }
   iframe:hover {
@@ -496,7 +499,7 @@ p {
     font-size: 11px;
     width: 140%;
   }
-  p.quote {
+  .quote {
     font-size: 18px;
   }
 
