@@ -350,7 +350,7 @@ div.column-right{
   box-sizing: border-box;
 }
 div.end{
-  margin-bottom: 10vh;
+  margin-bottom: 100px;
 }
 div.writing{
   margin-left: auto;
@@ -498,6 +498,46 @@ div.conversation {
 
 
 @media screen and (max-width: 550px){
+/* home page layout */
+div.home-column-left{
+  width: 104%;
+  display: block;
+  margin-left: -10px;
+  box-sizing: border-box;
+}
+  h1{
+    font-size: 30px;
+    width: 97%;
+    margin-left: 0px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px black;
+  }
+  img.cal-img{
+    width: 80%;
+  }
+
+div.home-column-right{
+  width: 100%;
+  display: block;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+  p.welcome-text{
+    font-size: 14px;
+    padding-left: 6px;
+  }
+  p.entry-title{
+    font-size: 16px;
+  }
+  p.date-homepage{
+    font-size: 12px;
+  }
+
+/* footer{
+  margin-top: 10px;
+} */
+
+
 /* side nav */
 div.column-left{
   float: left;
@@ -557,41 +597,49 @@ div.column-left{
   div.img-nav{
     margin-top: 70px;
     margin-left: 3px;
-
-    /* margin-top: -70px;
-    margin-left: 65px; */
   }
   div.nav-grid{
     width: 90px;
     float: left;
     transform: rotate(90deg);
-  transform-origin: right top;
+    transform-origin: right top;
+  }
+  span.entryname{
+    font-size: 12px;
+    margin-left: -80px;
   }
 
 /* entry (content) layout */
 div.column-right{
   margin-top: 110px;
-  margin-left: 10px;
+  margin-left: 5px;
   box-sizing: border-box;
-  width: 110%;
+  width: 92%;
 }
+  div.song-info{
+    width:100%;
+  }
 
 /* specific text styles */
 h2 {
-  font-size: 30px;
-  width: 95%;
+  font-size: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
+  h2.h2-entry2{
+    font-size: 40px;
+  }
 p {
   font-size: 14px;
 }
   p.entry-date {
-    font-size: 11px;
-    width: 30%;
+    font-size: 12px;
+    width: 25%;
   }
   p.data {
-    font-size: 11px;
-    width: 100%;
-    /* width: 143%; */
+    font-size: 12px;
+    box-sizing: border-box;
+    width:102%;
   }
   .quote {
     font-size: 18px;
@@ -607,11 +655,12 @@ iframe {
   box-sizing: border-box;
 }
 audio {
-  width: 200px;
+  width: 102%;
   height: 50px;
+  box-sizing: border-box;
 }
 
 img.myimg {
-  width: 102%;
+  width: 103%;
   box-sizing: border-box;
 }
