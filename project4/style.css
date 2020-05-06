@@ -312,6 +312,7 @@ div.column-left{
     margin: 5px auto auto auto;
     display:block;
   }
+
   span.album-title1{
     visibility: hidden;
     font-size: 1.1vw;
@@ -520,7 +521,7 @@ div.home-column-right{
   width: 100%;
   display: block;
   margin-left: 0px;
-  margin-top: 50px;
+  margin-top: 25%;
 }
   p.welcome-text{
     font-size: 14px;
@@ -532,10 +533,6 @@ div.home-column-right{
   p.date-homepage{
     font-size: 12px;
   }
-
-/* footer{
-  margin-top: 10px;
-} */
 
 
 /* side nav */
@@ -564,6 +561,7 @@ div.column-left{
     }
       img.img-home{
         margin-top: 50%;
+        height: 35px;
       }
     div.nav-next{
       margin-top: -34px;
@@ -643,6 +641,12 @@ p {
   }
   .quote {
     font-size: 18px;
+  }
+p.paragraph-container {
+  box-shadow: none;
+}
+  p.link {
+    box-shadow: 10px 10px black;
   }
 
 /* video/audio controls */
