@@ -12,16 +12,11 @@ function time(id)
           let days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
         let h = date.getHours();
 
-        hour = h;
+
         // console.log(hour);
+        let currentSlant = calcSlant(h)
 
-        if ( hour == 0 ){
-          slant = 50;
-        }else{
-           slant = (hour/24) * 150 + 50;
-        }
-
-        changeAngle('#currenttime', slant);
+        changeAngle('#currenttime', currentSlant);
         // console.log(slant);
 
           if(h<10)
@@ -47,77 +42,74 @@ function time(id)
 
 // title slant change
 // lowest value (slnt 50): 0:00, highest value (slnt 200)24:00
+let timer = setInterval(calcSlant, 1000);
 function changeAngle(element, slant){
   $(element).css('font-variation-settings', "'slnt' "+slant );
 }
 
-// vfont slant change depending on timezone? similar to code above?
+function calcSlant(hour){
+    let slant = 50;
+    if ( hour !== 0 ){
+      slant = (hour/24) * 150 + 50;
+    }
+    return slant;
+    setTimeout(calcSlant(), 1000);
+}
 
-
-// time zone -showing times
+// time zones
   // New York
     let usaTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
-      usaTime = new Date(usaTime);
-      console.log('New York time: '+usaTime.toLocaleString())
+    let usaSlant = calcSlant( new Date(usaTime).getHours() );
 
-    function usatime(id) {
-      let result = 'current time ' +usaTime.toLocaleString();
-      document.getElementById('usatime').innerHTML = result;
-      setTimeout('time("'+id+'");','1000');
-      return result;
-    }
-
-
-// UTC offset method
-    var d = new Date();
-    var utc_offset = d.getTimezoneOffset();
-    d.setMinutes(d.getMinutes() + utc_offset);
-      //console.log("UTC: " + d);
-    var newyork_offset = -4 * 60;
-    d.setMinutes(d.getMinutes() + newyork_offset);
-    console.log("New York: " + d);
-
-
-    // if ( hour == 0 ){
-    //   slant = 50;
-    // }
-    // else{
-    //    slant = (hour/24) * 150 + 50;
-    // }
-
-
-
-  // Seoul
+//   // Seoul
     let seoulTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
-    seoulTime = new Date(seoulTime);
-      //console.log('Seoul time: '+seoulTime.toLocaleString())
+    let koreaSlant = calcSlant( new Date(seoulTime).getHours() );
+
+// KL
+    let klTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kuala_Lumpur"});
+    let malaysiaSlant = calcSlant( new Date(klTime).getHours() );
+
+// Vancouver
+    let vancouverTime = new Date().toLocaleString("en-US", {timeZone: "America/Vancouver"});
+    let canadaSlant = calcSlant( new Date(vancouverTime).getHours() );
 
  // Paris
     let parisTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"});
-    parisTime = new Date(parisTime);
-      //console.log('Paris time: '+parisTime.toLocaleString())
+    let franceSlant = calcSlant( new Date(parisTime).getHours() );
+
 // Oslo
     let osloTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Oslo"});
-    osloTime = new Date(osloTime);
-      //console.log('Oslo time: '+osloTime.toLocaleString())
-// KL
-    let klTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kuala_Lumpur"});
-    klTime = new Date(klTime);
-      //console.log('KL time: '+klTime.toLocaleString())
-// Vancouver
-    let vanTime = new Date().toLocaleString("en-US", {timeZone: "America/Vancouver"});
-    vanTime = new Date(vanTime);
-      // console.log('Vancouver time: '+vanTime.toLocaleString())
+    let norwaySlant = calcSlant( new Date(osloTime).getHours() );
 
 
-
-
-// slider
+// slider + times
 $(document).ready(function(){
+  $('#usatime').text(usaTime);
+  changeAngle('#newyork', usaSlant);
+
+  $('#koreatime').text(seoulTime);
+  changeAngle('#seoul', koreaSlant);
+
+  $('#malaysiatime').text(klTime);
+  changeAngle('#kl', malaysiaSlant);
+
+  $('#canadatime').text(vancouverTime);
+  changeAngle('#vancouver', canadaSlant);
+
+  $('#francetime').text(parisTime);
+  changeAngle('#paris', franceSlant);
+
+  $('#norwaytime').text(osloTime);
+  changeAngle('#oslo', norwaySlant);
+
+
+
   $('#vfcontrols').on('input', function() {
     let value = $(this).val();
     let setting = "'slnt'" + value;
     $('p.letters').css('font-variation-settings', setting);
-    console.log('slider changed to' + value);
+    console.log('slider changed to ' + value);
+    $('#value').text('Value: ' + value);
   });
+
 });

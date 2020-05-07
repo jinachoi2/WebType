@@ -1,0 +1,51 @@
+@import url("https://use.typekit.net/fio1cdf.css");
+@import url("https://use.typekit.net/fio1cdf.css");
+
+h1, h2, main{
+  font-family: input-mono, monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: blue;
+}
+
+h1, h2 {
+  text-align: center;
+}
+  h1{
+    font-size: 150px;
+    /* font-size: 11vw; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    z-index: -1;
+  }
+  h2{
+    font-size: 12px;
+  }
+
+main {
+  text-align: left;
+  top: 10%;
+  position: fixed;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+  a:hover{
+    color: white;
+    transition: 1s;
+  }
+/* div{
+  height: 10px;
+  background-color: blue;
+  margin-bottom: 0px;
+} */
+
+
+@media screen and (max-width: 450px) {
+  main{
+    top: 500px;
+  }
+}

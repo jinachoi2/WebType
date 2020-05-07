@@ -10,8 +10,20 @@
         <script src="script.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
         <style>
-          p.variable {
+          p.variable, #value {
             font-family: 'Oswald', sans-serif;
+            font-style: normal;
+            font-size: 1.1vw;
+          }
+          @media screen and (max-width: 900px){
+            p.variable, #value{
+              font-size: 13px;
+            }
+          }
+          @media screen and (max-width: 650px){
+            p.variable, #value{
+              font-size: 12px;
+            }
           }
         </style>
     </head>
@@ -21,23 +33,33 @@
       <a href="index.html"><p class="back"> ... </p></a>
       <div class="grid-container">
         <div class="grid-item">
-          <p class="variable" id="tnewyork"><span class="city">New York</span>
+          <p class="variable" id="newyork"><span class="city">New York</span>
             <br>USA &ensp;| &ensp;<span id="usatime"></span>
           </p>
         </div>
         <div class="grid-item">
-          <p class="variable"><span class="city">Seoul</span>
+          <p class="variable" id="seoul"><span class="city">Seoul</span>
             <br>South Korea &ensp;| &ensp;<span id="koreatime"></span>
           </p>
         </div>
         <div class="grid-item">
-          <p class="variable"><span class="city">Kuala Lumpur</span>
+          <p class="variable" id="kl"><span class="city">Kuala Lumpur</span>
             <br>Malaysia&ensp;| &ensp;<span id="malaysiatime"></span>
           </p>
         </div>
         <div class="grid-item">
-          <p class="variable"><span class="city">Vancouver</span>
+          <p class="variable" id="vancouver"><span class="city">Vancouver</span>
             <br>Canada&ensp;| &ensp;<span id="canadatime"></span>
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable" id="paris"><span class="city">Paris</span>
+            <br>France&ensp;| &ensp;<span id="francetime"></span>
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="variable" id="oslo"><span class="city">Oslo</span>
+            <br>Norway&ensp;| &ensp;<span id="norwaytime"></span>
           </p>
         </div>
       </div>
@@ -49,6 +71,7 @@
 
       <div class="controls">
         <input id="vfcontrols" type="range" min="50" max="200" value="120">
+        <p id="value">Value: 120</p>
       </div>
     </body>
   </html>

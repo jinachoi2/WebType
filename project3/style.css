@@ -36,17 +36,17 @@ p.back{
   font-size: 2em;
   margin: -15px -2px 0px;
 }
-p.variable {
-  /* font-family: pt-sans-narrow, sans-serif; */
-  font-weight: 400;
+/* p.variable {
   font-style: normal;
   font-size: 1.1vw;
-}
+} */
 span.city{
   font-family: 'variableTest';
-  /* font-variation-settings: 'slnt' 120; */
   font-size: 5.1vw;
   /* margin-left: -6%; */
+}
+#value {
+  font-family: 'Oswald', sans-serif;
 }
 
 .grid-container {
@@ -56,7 +56,7 @@ span.city{
   grid-row-gap: 10%;
   padding-left: 15%;
   padding-right: 10%;
-  margin-top: 10%;
+  margin-top: 6%;
   }
 
 .letters-container {
@@ -97,9 +97,9 @@ input#vfcontrols {
     grid-template-columns: 1fr;
     grid-row-gap:2%;
   }
-  p.variable{
-    font-size:3vw;
-  }
+  /* p.variable, #value{
+    font-size:10px;
+  } */
   span.city{
     font-size: 10vw;
     margin-left: 0%;
@@ -116,4 +116,3 @@ input#vfcontrols {
   p.letters-container {
     margin-top: 50px;
   }
-
