@@ -7,19 +7,8 @@
        	<link rel="stylesheet" type="text/css" href="style.css">
         <title>Virtual Playlist</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- <script src="script.js"></script> -->
-      <script>
-        audioPlayer();
-        function audioPlayer(){
-          $("#player")[0].src = $(".playlist1 a")[0];
-          $("#player")[0].play();
-        }
-        audioPlayer();
-        function audioPlayer(){
-          $("#player")[0].src = $(".playlist2 a")[0];
-          $("#player")[0].play();
-        }
-      </script>
+      <script src="song-library.js"></script>
+      <script src="script.js"></script>
       <style>
         html{
           background-color: #E1BEE7;
@@ -33,56 +22,25 @@
       <div class="container">
         <div class="home-column-left">
           <div class="playlist">
-            <!-- <audio src="" controls id="player">
-            </audio> -->
+            <audio src="" controls id="player">
+            </audio>
 
             <div class="player-container">
-              <button onclick="document.getElementById('player').play()" class="btn-play"><img src="images/play.svg" height="30px"></button>
-              <button onclick="document.getElementById('player').pause()" class="btn-pause"><img src="images/pause.svg" height="30px"></button>
+              <p class="instruction">Click on an album below to listen to the song</p>
+              <button onclick="document.getElementById('player').play()"><img src="images/play.svg" height="25px"></button>
+              <button onclick="document.getElementById('player').pause()"><img src="images/pause.svg" height="25px"></button>
+              <summary></summary>
             </div>
           </div>
 
-          <div class="calendar">
-            <div class="cal-grid img1" class="playlist1">
-              <a href="songs/Busan.mp3">
-              <img src="images/entry1-album.jpeg" alt="Damons Year Busan" class="cal-img"><span class="songname">1. Busan</span></a>
-            </div>
-            <div class="cal-grid img2" class="playlist2">
-              <a href="songs/Dandelion.mp3">
-              <img src="images/entry2-album.jpg" alt="Oohyo Dandelion " class="cal-img"><span class="songname">2. Dandelion</span>
-            </div></a>
-            <div class="cal-grid img3">
-              <img src="images/entry3-album.jpg" alt="Young B The End " class="cal-img"><span class="songname">3. The End</span>
-            </div>
-            <div class="cal-grid img4">
-              <img src="images/entry4-album.jpg" alt="Joe Hisaishi Howl's Moving Castle " class="cal-img"><span class="songname">4. Merry Go Round of Life</span>
-            </div>
-            <div class="cal-grid img5">
-              <img src="images/entry5-album.jpg" alt="Lauv Modern Loneliness " class="cal-img"><span class="songname">5. Modern Loneliness</span>
-            </div>
-            <div class="cal-grid img6">
-              <img src="images/entry6-album.jpg" alt="Lim Hyung Joo Finally vol.5 " class="cal-img"><span class="songname">6. A Thousand Winds</span>
-            </div>
-            <div class="cal-grid img7">
-              <img src="images/entry7-album.jpg" alt="Kenshi Yonezu Spirits of the Sea " class="cal-img"><span class="songname">7. Spirits of the Sea</span>
-            </div>
-            <div class="cal-grid img8">
-              <img src="images/entry8-album.jpg" alt="dosii lovememore" class="cal-img"><span class="songname">8. lovememore</span>
-            </div>
-            <div class="cal-grid img9">
-              <img src="images/entry9-album.jpg" alt="IU Palette album cover" class="cal-img"><span class="songname">9. Palette</span>
-            </div>
-            <div class="cal-grid img10">
-              <img src="images/entry10-album.jpg" alt="BURNOUT SYNDROMES Fly High!!" class="cal-img"><span class="songname">10. Fly High!!</span>
-            </div>
-            <div class="cal-grid img11">
-              <img src="images/entry11-album.jpg" alt="BTS Map of Seven" class="cal-img"><span class="songname">11. Black Swan</span>
-            </div>
-            <div class="cal-grid img12">
-              <img src="images/entry12-album.jpeg" alt="Jeremy Zucker always, i'll care" class="cal-img"><span class="songname">12. always, i'll care</span>
-            </div>
 
-          </div>
+          <!-- ++++++++++++++++++++++++++++++ -->
+            <!-- +++++++ albums go here +++++++ -->
+            <div class="calendar" id="calendar"></div>
+            <!-- ++++++++++++++++++++++++++++++ -->
+            <!-- ++++++++++++++++++++++++++++++ -->
+
+
           <div class="end"></div>
         </div>
     </div>
@@ -150,7 +108,7 @@
         </div>
 
         <footer>
-          <p class="footer"> Virtual Playlist coded by Jina Choi for Webtype 2020 </p>
+          <p class="footer"> Virtual Playlist coded by Jina Choi for RISD Spring 2020</p>
         </footer>
 
     </body>

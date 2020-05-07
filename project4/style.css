@@ -8,13 +8,12 @@
   src: url(Ortica-Light.woff);
   font-weight: lighter;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap'); */
 
-/* html {
-  background-color: #E1BEE7;
-} */
-h1{
+html{
   font-family: Ortica;
+}
+
+h1{
   font-weight: bold;
   font-size: 4vw;
   text-align: center;
@@ -25,8 +24,12 @@ h1{
   background-color: white;
   box-shadow: 10px 10px;
 }
+h3{
+  font-weight: bold;
+  font-size: 2vw;
+  margin: 15px 0px 0px 20px;
+}
 p {
-  font-family: Ortica;
   font-weight: lighter;
   font-size:1.3vw;
   line-height: 1.4;
@@ -58,15 +61,61 @@ audio {
 .playlist{
   width: 93%;
 }
-.player-container{
-  padding-left: 10px;
-  box-sizing: border-box;
+#player {
+position: absolute;
+left: 0; top: 0;
+transform: translate(-100%, -100%);
 }
-.btn-play, .btn-pause{
+.music-button {
+  cursor: pointer;
+  font-size: 1.2vw;
+}
+.player-container{
+  border: 1px solid black;
+  background-color: white;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 20vh;
+}
+  .player-container summary {
+    display: inline-block;
+    padding-left: 10%;
+    margin-top: 3%;
+  }
+  .player-container p {
+    font-weight: lighter;
+    width: 100%;
+  }
+    .player-entry{
+      border: 1px solid black;
+      box-shadow: 3px 3px black;
+      background-color: white;
+      padding: 3px 0px 3px 8px;
+      margin-left: 12px;
+    }
+  .player-container summary img {
+    width: 100px; height: auto;
+    border: 1px solid black;
+    float: left;
+  }
+button{
+  font-weight: bold;
   font-size: 12px;
   box-shadow: 3px 3px black;
+  background-color: white;
+  border: 1px solid black;
   padding: 5px;
-  margin-top: 3%;
+  margin: 3% 0px 0px 5px;
+}
+  button:hover{
+    box-shadow: none;
+    transition: 1s;
+    cursor: pointer;
+  }
+.instruction {
+  padding-left: 2%;
+  margin-left: 0px;
 }
 
 /* home page contents */
@@ -92,7 +141,6 @@ div.calendar {
   grid-template-columns: auto auto auto auto;
 }
   div.cal-grid{
-    display: block;
     float: left;
   }
   img.cal-img {
@@ -102,7 +150,6 @@ div.calendar {
     box-shadow: 3px 3px black;
   }
   span.songname{
-    font-family: Ortica;
     font-weight: bold;
     font-size: 1.1vw;
     padding: 2px;
@@ -175,30 +222,15 @@ div.entries{
     transition-duration: 1s;
   }
 p.entry-title{
-  font-family: Ortica;
   font-weight: bold;
   font-size: 1.4vw;
   display: inline;
 }
 p.date-homepage{
-  font-family: Ortica;
   font-weight: lighter;
   font-size: 1vw;
   margin-top: 0px
 }
-div.player-container{
-  background-color: white;
-  border: 1px solid black;
-  height: 20vh;
-  width: 102%;
-  margin-bottom: 15px;
-}
-  button{
-    background-color: white;
-    border: 1px solid black;
-    font-family: Ortica;
-    font-weight: bold;
-  }
 
 div.scroll{
   overflow: scroll;
@@ -234,17 +266,9 @@ div.column-left{
       transition: 1s;
     }
     p.bold{
-      font-family: Ortica;
       font-weight: bold;
     }
-  /* div.img-nav{
-    display: grid;
-    grid-template-columns: auto;
-  }
-  div.nav-grid {
-      display: block;
-      float: left;
-  } */
+
     div.nav-space{
      height: 15px;
     }
@@ -260,7 +284,6 @@ div.column-left{
         transition: 0.5s;
       }
     span.entryname{
-      font-family: Ortica;
       font-weight: bold;
       font-size: 1vw;
       padding: 3px;
@@ -357,6 +380,7 @@ div.column-right{
   float: left;
   width: 80%;
   margin-left: 20%;
+  padding: 0px 50px;
   box-sizing: border-box;
 }
 div.end{
@@ -367,7 +391,6 @@ div.writing{
   margin-right: auto;
 }
 h2{
-  font-family: Ortica;
   font-weight: bold;
   font-size: 6vw;
   margin-bottom: 0px;
@@ -386,7 +409,6 @@ h2{
     background-color: #EDF0F0;
   }
 p.entry-date{
-  font-family: Ortica;
   font-weight: bold;
   font-size: 1.3vw;
   padding-left: 10px;
@@ -411,7 +433,6 @@ div.song-info{
       transition: 1s;
     }
   p.data{
-    font-family: Ortica;
     font-weight: bold;
     font-size: 1.3vw;
     border: 1px solid black;
@@ -422,24 +443,22 @@ div.song-info{
     box-sizing: border-box;
     }
 
+
+p.link:hover{
+  box-shadow: none;
+  transition: 1s;
+}
 p.paragraph-container{
   border: 1px solid black;
   box-shadow: 10px 10px black;
   padding: 20px;
   margin-bottom: 20px;
 }
-p.link:hover{
-  box-shadow: none;
-  transition: 1s;
-}
-
 .quote {
-  font-family: Ortica;
   font-weight: bold;
   font-size: 2.5vw;
 }
   .quote2 {
-    font-family: Ortica;
     font-weight: bold;
     font-size: 1.9vw;
   }
@@ -455,6 +474,7 @@ iframe{
   margin: 20px auto 20px auto;
   box-sizing: border-box;
   width: 95%;
+  height: 70vh;
 }
   iframe:hover {
     box-shadow: none;
@@ -507,7 +527,7 @@ div.conversation {
 }
 
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
 /* home page layout */
 div.home-column-left{
   width: 104%;
@@ -521,6 +541,9 @@ div.home-column-left{
     margin-left: 0px;
     box-sizing: border-box;
     box-shadow: 5px 5px black;
+  }
+  h3{
+    font-size: 20px;
   }
   img.cal-img{
     width: 80%;
@@ -543,23 +566,28 @@ div.home-column-right{
     padding-left: 6px;
   }
   p.entry-title{
-    font-size: 16px;
+    font-size: 20px;
   }
   p.date-homepage{
-    font-size: 12px;
+    font-size: 14px;
   }
+  div.entries{
+    padding-left: 3px;
+  }
+
+.playercontainer summary{
+  padding-left: 30px;
+}
 
 
 /* side nav */
 div.column-left{
   float: left;
   width: 100px;
-  height: 380px;
-  /* width: 100%;
-  height: 10vh; */
+  height: 520px;
   position: absolute;
   z-index: 10;
-  margin-left:-106px;
+  margin-left: -105px;
   transform: rotate(-90deg);
   transform-origin: right top;
   padding-top: 60px;
@@ -623,10 +651,10 @@ div.column-left{
 
 /* entry (content) layout */
 div.column-right{
-  margin-top: 110px;
-  margin-left: 5px;
+  margin: 110px 0px 0px 0px;
+  padding: 0px 10px 0px 0px;
+  width: 100%;
   box-sizing: border-box;
-  width: 92%;
 }
   div.song-info{
     width:100%;
@@ -660,7 +688,7 @@ p.paragraph-container {
   box-shadow: none;
 }
   p.link {
-    box-shadow: 10px 10px black;
+    box-shadow: 5px 5px black;
   }
 
 /* video/audio controls */
@@ -681,4 +709,10 @@ audio {
 img.myimg {
   width: 103%;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 414px){
+  div.column-left{
+    height: 320px;
+  }
 }
