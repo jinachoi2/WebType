@@ -27,24 +27,32 @@ main {
   text-align: left;
   top: 10%;
   position: fixed;
-  height: 100%;
 }
 a{
   text-decoration: none;
   color: blue;
+  transition: color 5s ease;
 }
   a:hover{
     color: white;
-    transition: 1s;
+    transition: color 0.5s ease;
   }
-/* div{
-  height: 10px;
-  background-color: blue;
-  margin-bottom: 0px;
-} */
+
+aside{
+  height: 1px;
+  width: 100vw;
+  top: 100vh;
+  left: -5px;
+  position: fixed;
+  background-color: red;
+  box-shadow: 10px 0px 3px 5px blue;
+}
 
 
 @media screen and (max-width: 450px) {
+  h1{
+    font-size: 140px;
+  }
   main{
     top: 500px;
   }
