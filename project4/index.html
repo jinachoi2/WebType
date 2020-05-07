@@ -11,12 +11,12 @@
       <script>
         audioPlayer();
         function audioPlayer(){
-          $("#player")[0].src = $("#playlist1 a")[0];
+          $("#player")[0].src = $(".playlist1 a")[0];
           $("#player")[0].play();
         }
         audioPlayer();
         function audioPlayer(){
-          $("#player")[0].src = $("#playlist2 a")[0];
+          $("#player")[0].src = $(".playlist2 a")[0];
           $("#player")[0].play();
         }
       </script>
@@ -33,23 +33,21 @@
       <div class="container">
         <div class="home-column-left">
           <div class="playlist">
-            <audio src="" controls id="player">
-            </audio>
+            <!-- <audio src="" controls id="player">
+            </audio> -->
 
-            <!-- <div class="player-container">
-              <button onclick="document.getElementById('player').play()">Previous</button>
-              <button onclick="document.getElementById('player').play()">Play</button>
-              <button onclick="document.getElementById('player').pause()">Pause</button>
-              <button onclick="document.getElementById('player').play()">Next</button>
-            </div> -->
+            <div class="player-container">
+              <button onclick="document.getElementById('player').play()" class="btn-play"><img src="images/play.svg" height="30px"></button>
+              <button onclick="document.getElementById('player').pause()" class="btn-pause"><img src="images/pause.svg" height="30px"></button>
+            </div>
           </div>
 
           <div class="calendar">
-            <div class="cal-grid img1" id="playlist1">
+            <div class="cal-grid img1" class="playlist1">
               <a href="songs/Busan.mp3">
               <img src="images/entry1-album.jpeg" alt="Damons Year Busan" class="cal-img"><span class="songname">1. Busan</span></a>
             </div>
-            <div class="cal-grid img2" id="playlist2">
+            <div class="cal-grid img2" class="playlist2">
               <a href="songs/Dandelion.mp3">
               <img src="images/entry2-album.jpg" alt="Oohyo Dandelion " class="cal-img"><span class="songname">2. Dandelion</span>
             </div></a>
@@ -66,7 +64,7 @@
               <img src="images/entry6-album.jpg" alt="Lim Hyung Joo Finally vol.5 " class="cal-img"><span class="songname">6. A Thousand Winds</span>
             </div>
             <div class="cal-grid img7">
-              <img src="images/entry7-album.jpg" alt="Kenshi Yonezu Spirits of the Sea " class="cal-img"><span class="songname">7. Spirites of the Sea</span>
+              <img src="images/entry7-album.jpg" alt="Kenshi Yonezu Spirits of the Sea " class="cal-img"><span class="songname">7. Spirits of the Sea</span>
             </div>
             <div class="cal-grid img8">
               <img src="images/entry8-album.jpg" alt="dosii lovememore" class="cal-img"><span class="songname">8. lovememore</span>
