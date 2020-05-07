@@ -39,13 +39,12 @@ a{
   }
 
 aside{
-  height: 1px;
-  width: 100vw;
-  top: 100vh;
-  left: -5px;
+  height: 10px;
+  width: 100%;
+  top: 99.4%;
+  left:0px;
   position: fixed;
-  background-color: red;
-  box-shadow: 10px 0px 3px 5px blue;
+  background-color: blue;
 }
 
 
@@ -55,5 +54,8 @@ aside{
   }
   main{
     top: 500px;
+  }
+  aside{
+    display:none;
   }
 }
