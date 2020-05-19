@@ -74,12 +74,13 @@ transform: translate(-100%, -100%);
   padding-left: 10px;
   margin-bottom: 15px;
   width: 100%;
-  height: 20vh;
+  height: 160px;
+  /* height: 20vh; */
 }
   .player-container summary {
     display: inline-block;
-    padding-left: 10%;
-    margin-top: -2%;
+    padding-left: 7%;
+    margin-top: -1%;
   }
   .player-container p {
     font-weight: lighter;
@@ -143,7 +144,7 @@ div.calendar {
   }
   img.cal-img {
     width: 8vw;
-    margin-top: 10px;
+    margin-top: 6px;
     border: 1px solid black;
     box-shadow: 3px 3px black;
   }
@@ -573,8 +574,12 @@ div.home-column-right{
     padding-left: 3px;
   }
 
-.playercontainer summary{
+.player-container {
+  height: 130px;
+}
+.player-container summary{
   padding-left: 30px;
+  margin-left: 30px;
 }
 
 
